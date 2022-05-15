@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+body{
+  font-size: 20px;
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+
+h1{
+  font-size: 3em;
+  padding: 10px 0;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+h2{
+  font-size: 2em;
+  padding: 10px 0;
+  line-height: 1em;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  transition: .4s;
+}
+
+a:hover{
+  color: #7e79cc;
+  transition: .4s;
+}
+
+.active{
+  color: #dc3e76;
+  font-weight: 700;
+}
+
+.linkButton{
+  font-size: 1.4em;
+  border: none;
+  padding: 15px 30px;
+}
+
+#signInButton,
+#signOutButton {
+  color: #fff;
+  float: right;
+  transition: .4s;
+}
+
+#signInButton:hover,
+#signOutButton:hover {
+  color: #7e79cc;
+  float: right;
+  transition: .4s;
+}
+
+#signInButton:active,
+#signOutButton:active {
+  color: #dc3e76;
+  float: right;
+  transition: .4s;
+}
+
+.header{
+  padding: 30px;
+}
+
+.body{
+  padding: 80px 100px;
+}

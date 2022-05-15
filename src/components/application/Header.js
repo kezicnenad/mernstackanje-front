@@ -1,22 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
+import { isLoggedContext } from '../../App';
 import Login from './login';
 import Logout from './logout';
-import StripePayCheckoutButton from "../modules/StripePaying";
 
 function Header() {
+
+  const isLogged = useContext(isLoggedContext);
+
   return (
-    <div className="jumbotron p-5 bg-light">
-      <h1>Header</h1>
-      <a href="/">Naslovnica</a>
-      <a href="/o-meni">O meni</a>
-      <a href="/podrska">Podrska</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/profil">Profil</a>
-      <a href="/savjeti">Savjeti</a>
-      <a href="/trgovina">Trgovina</a>
-      <Login />
-      <Logout />
-      <StripePayCheckoutButton />
+    <div className="header">
+      <NavLink className="linkButton" to="/">
+        Nenad Kežić
+      </NavLink>
+      <NavLink className="linkButton" to="/o-meni">
+        O meni
+      </NavLink>
+      <NavLink className="linkButton" to="/primjeri">
+        Primjeri
+      </NavLink>
+      {isLogged === true && (
+        <>
+          <NavLink className="linkButton" to="/savjeti">
+            Savjeti
+          </NavLink>
+          <NavLink className="linkButton" to="/trgovina">
+            Web shop
+          </NavLink>
+        </>
+      )}
+      {isLogged === false ? <Login /> : <Logout />}
     </div>
   );
 }
