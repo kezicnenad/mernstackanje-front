@@ -58,6 +58,7 @@ a:hover{
   color: #7e79cc;
   float: right;
   transition: .4s;
+  cursor: pointer;
 }
 
 #signInButton:active,
