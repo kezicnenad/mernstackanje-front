@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const URI = "https://mernstackanje.herokuapp.com/";
+  // const URI = "http://localhost:5000/";
 
   const [artikli, setArtikli] = useState([]);
 
