@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Main() {
+function Savjeti() {
   return (
     <div>
-      <h2>Main</h2>
+      <h2>Savjeti</h2>
     </div>
   )
 }
 
-export default Main
+export default Savjeti
