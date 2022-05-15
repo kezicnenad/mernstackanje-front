@@ -1,19 +1,31 @@
-import React from 'react';
-import { stripeAPI } from "./components/fetch/stripeAPI";
-import './App.css';
+import React, { useEffect, createContext, useState } from "react";
+import { gapi } from 'gapi-script';
+import Router from "./components/routes/routesMain";
+import  Header from "./components/application/Header";
 
-function App() {
+const clientId = "81687935679-p868qnia2d0ktqt72pvtfgn0f68rhf4m.apps.googleusercontent.com";
+
+function App(){
+
+  useEffect(() => {
+    const start = () => {
+      gapi.client.init({
+        clientId: clientId,
+        scope: "profile email",
+      });
+    };
+
+    gapi.load("client:auth2", start);
+  }, []);
+  
 
   return (
-    <div className="jumbotron p-5 bg-light">
+    <div>
+      <Header />
+      <div className="p-5">
       <h1>App</h1>
-      <button
-        type="button"
-        className="btn btn-primary"
-        onClick={() => stripeAPI()}
-      >
-        Checkout
-      </button>
+        <Router />
+      </div>
     </div>
   );
 }
