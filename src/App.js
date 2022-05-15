@@ -33,11 +33,9 @@ function App() {
   return (
     <div className="jumbotron p-5 bg-light">
       <h1>App</h1>
-      {artikli.map((artikl, index) => (
-        <div>
-          <p key={artikl._id}>
-            Naziv {artikl.naziv}
-          </p>
+      {artikli.map(artikl => (
+        <div key={artikl._id}>
+          <p>Naziv {artikl.naziv}</p>
           <p>Opis {artikl.opis}</p>
           <p>Kategorija {artikl.kategorija}</p>
           <p>Jedinica mjere {artikl.jedinica_mjere}</p>
