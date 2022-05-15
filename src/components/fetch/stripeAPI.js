@@ -1,9 +1,9 @@
 export const stripeAPI = async () => {
-  await fetch(process.env.SERVER_URL + "/izvrsi-placanje", {
+  await fetch("https://mernstackanje.herokuapp.com/izvrsi-placanje", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer " + process.env.TOKEN_SECRET,
+      Authorization: "Bearer " + process.env.TOKEN_SECRET,
     },
     body: JSON.stringify({
       items: [
