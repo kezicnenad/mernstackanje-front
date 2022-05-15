@@ -37,6 +37,7 @@ a:hover{
 
 .active{
   color: #dc3e76;
+  font-weight: 400;
 }
 
 .linkButton{
