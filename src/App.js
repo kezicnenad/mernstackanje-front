@@ -1,37 +1,58 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 
-
 function App() {
+  const URI = "https://mernstackanje.herokuapp.com/";
+  // const URI = "http://localhost:5000/";
 
-  // const URI = "https://mern-stack-crud-server.herokuapp.com";
-  const URI = "http://localhost:5000";
-
-  const fetchApi = () => {
-    fetch(URI + "/services/add", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'charset': "utf-8",
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({
-        name: "Name",
-        description: "Opis",
-        logo: "Slika",
-        link: "Link",
-      }),
-    });
-  };
+  const [artikli, setArtikli] = useState([]);
 
   useEffect(() => {
-    fetchApi();
+    getArtikli('artikli');
   }, []);
+
+  const getArtikli = async (lokacija) => {
+    var myHeaders = new Headers();
+    await myHeaders.append(
+      "Authorization",
+      'Bearer 32GMVB79jAQ}TJcc3kaV5-&/g;7/Y)RA:"`]/!`JSR24qM\'qGFvB;UW"R>s-.ud8'
+    );
+
+    var requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+
+    await fetch(URI + lokacija, requestOptions)
+      .then((response) => response.json())
+      .then((result) => setArtikli(result))
+      .catch((error) => console.log("error", error));
+  };
 
   return (
     <div className="jumbotron p-5 bg-light">
       <h1>App</h1>
-      <button type="button" className="btn btn-primary" onClick={()=>fetchApi()}>Post service</button>
+      {artikli.map((artikl, index) => (
+        <div>
+          <p key={artikl._id}>
+            Naziv {artikl.naziv}
+          </p>
+          <p>Opis {artikl.opis}</p>
+          <p>Kategorija {artikl.kategorija}</p>
+          <p>Jedinica mjere {artikl.jedinica_mjere}</p>
+          <p>Cijena {artikl.cijena}</p>
+          <p>Zaliha {artikl.zaliha}</p>
+          <p>Porez {artikl.porez}</p>
+          <p>Popust {artikl.popust}</p>
+          <p>Kreirano {artikl.kreirano}</p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      ))}
     </div>
   );
 }
