@@ -34,7 +34,7 @@ function Router() {
           </>
         )}
         <Route path="/greska" element={<Greska />} />
-        <Route path="*" element={<Greska />} />
+        <Route path="/*" element={<Greska />} />
       </Routes>
     </div>
   );
