@@ -1,5 +1,5 @@
 export const stripeAPI = async () => {
-  await fetch("http://localhost:5000/izvrsi-placanje", {
+  await fetch("https://mernstackanje.herokuapp.com/izvrsi-placanje", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
