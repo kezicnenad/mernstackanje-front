@@ -2,9 +2,8 @@ import React, { useContext } from 'react';
 import { isLoggedContext } from '../../App';
 import {Routes, Route} from 'react-router-dom';
 
-import Guest from "../application/Guest";
 import Main from "../application/Main";
-import Savjeti from "../application/Savjeti";
+import Skola from "../application/Skola";
 import Trgovina from "../application/Trgovina";
 import Primjeri from "../application/Primjeri";
 import Omeni from "../application/Omeni";
@@ -18,23 +17,16 @@ function Router() {
   return (
     <div>
       <Routes>
-        {isLogged === true ? (
+        <Route index exact element={<Main />} />
+        <Route path="/about-me" element={<Omeni />} />
+        <Route path="/examples" element={<Primjeri />} />
+        {isLogged === true && (
           <>
-            <Route index exact element={<Main />} />
-            <Route path="/o-meni" element={<Omeni />} />
-            <Route path="/primjeri" element={<Primjeri />} />
-            <Route path="/savjeti" element={<Savjeti />} />
-            <Route path="/trgovina" element={<Trgovina />} />
-          </>
-        ) : (
-          <>
-            <Route index exact element={<Guest />} />
-            <Route path="/o-meni" element={<Omeni />} />
-            <Route path="/primjeri" element={<Primjeri />} />
+            <Route path="/school" element={<Skola />} />
+            <Route path="/shop" element={<Trgovina />} />
           </>
         )}
-        <Route path="/greska" element={<Greska />} />
-        <Route path="/*" element={<Greska />} />
+        <Route path="*" element={<Greska />} />
       </Routes>
     </div>
   );

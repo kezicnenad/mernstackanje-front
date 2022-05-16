@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Savjeti() {
+function Skola() {
   return (
     <div>
-      <h2>Savjeti</h2>
+      <h2>Škola</h2>
     </div>
   )
 }
 
-export default Savjeti
+export default Skola;
