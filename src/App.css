@@ -25,6 +25,7 @@ h2{
 }
 
 p{
+  color: #fff !important;
   line-height: 1.8em;
   padding-bottom: 15px;
 }
@@ -92,6 +93,10 @@ a:hover{
 
 .header{
   padding: 30px;
+}
+
+.card h5, p{
+  color: #000;
 }
 
 .navbar.navbar-expand-lg.navbar-light{
