@@ -3,7 +3,7 @@
 body{
   font-size: 20px;
   background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
-  background-size: auto 100vh;
+  background-size: auto auto;
   background-repeat: no-repeat;
   background-position: left top;
   font-family: 'Quicksand', sans-serif;
@@ -18,10 +18,15 @@ h1{
 }
 
 h2{
-  font-size: 2em;
-  padding: 10px 0;
-  line-height: 1em;
-  font-weight: 300;
+  font-size: 2.2em;
+  padding: 0px 0 80px 0;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+p{
+  line-height: 1.8em;
+  padding-bottom: 15px;
 }
 
 a{
@@ -41,37 +46,105 @@ a:hover{
 }
 
 .linkButton{
-  font-size: 1.4em;
   border: none;
-  padding: 15px 30px;
 }
 
+.nav-item{
+  padding: 20px;
+}
+
+.mernLogo{
+  height: 700px;
+  width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 180px;
+}
+
+.dropdown-item,
 #signInButton,
 #signOutButton {
-  color: #fff;
-  float: right;
+  color: #7e79cc;
   transition: .4s;
-}
+  padding: 15px;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  }
 
+.dropdown-item:hover,
 #signInButton:hover,
 #signOutButton:hover {
-  color: #7e79cc;
-  float: right;
+  color: #fff;
   transition: .4s;
   cursor: pointer;
+  background-color: #7e79cc;
 }
 
 #signInButton:active,
 #signOutButton:active {
   color: #dc3e76;
-  float: right;
   transition: .4s;
+}
+
+.body {
+  padding: 0px 100px;
 }
 
 .header{
   padding: 30px;
 }
 
-.body{
-  padding: 80px 100px;
+.navbar.navbar-expand-lg.navbar-light{
+  box-shadow: none;
+}
+.badge.rounded-pill.account {
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  padding-top: 8px;
+  transition: .2s;
+}
+
+.badge.rounded-pill.account:hover {
+  color: #fbc8d4;
+  background-color: #7e79cc;
+  height: 35px;
+  width: 35px;
+  transition: .2s;
+}
+
+.fas {
+  color: #fff;
+  padding-top: 8px;
+  transition: .2s;
+}
+
+.fas:hover {
+  color: #7e79cc;
+  transition: .2s;
+}
+
+.partneri{
+  margin-top: 180px;
+  margin-bottom: 0px;
+}
+
+.imgPartner{
+  margin: auto;
+}
+.partnerLogo {
+  height: auto;
+  width: 120px;
+  filter: blur(0px) grayscale(1);
+  opacity: .4;
+  transition: .4s;
+}
+.partnerLogo:hover {
+  filter: blur(0px) grayscale(0);
+  opacity: 1;
+  transition: .4s;
+}
+
+.footer{
+  margin-top: 150px !important;
 }

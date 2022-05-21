@@ -8,6 +8,9 @@ import Trgovina from "../application/Trgovina";
 import Primjeri from "../application/Primjeri";
 import Omeni from "../application/Omeni";
 
+import Partneri from "../application/Partneri";
+import Footer from "../application/Footer";
+
 import Greska from "../application/Greska";
 
 function Router() {
@@ -28,6 +31,8 @@ function Router() {
         )}
         <Route path="*" element={<Greska />} />
       </Routes>
+      <Partneri />
+      <Footer />
     </div>
   );
 }
