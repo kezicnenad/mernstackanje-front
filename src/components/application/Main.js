@@ -8,32 +8,74 @@ function Main() {
         <img src={imgMernstack} alt="MERN" className="mernLogo" />
       </div>
       <h2>
-        MERN Stack je framework za razvoj web aplikacija. Sastoji se od MongoDB,
-        ExpressJS, ReactJS i NodeJS
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry
       </h2>
       <p>
-        Korisit ću sljedeće library-e: Node.js, Express.js, ReactJS, MongoDB,
-        Stripe, Bootstrap, Material-UI, OAuth, Routes, Context, Nodemon, Mongoose, Axios, CORS, JSON Web Token...
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
       <p>
-        <b>MongoDB: </b>No-SQL baza podataka, dokumentno orijentirana
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
       <p>
-        <b>ExpressJS: </b>Lagani NodeJS framework koji se koristi za Backend
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
       <p>
-        <b>ReactJS: </b>Library za izgradnju komponenti korisničkog sučelja
-        (UI), stvoren od strane Facebooka
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
       <p>
-        <b>NodeJS: </b>JavaScript runtime okruženje. Koristi se za izvršavanje
-        JavaScripta na računalu a ne samo u browseru
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
       <p>
-        Backend je hostan na Heroku (Platforma u Cloudu), dok je Frontend hostan
-        na Netlify, također u Cloudu, a sve je pushano na GitHub. Na Google
-        računu napravljen token zbog korištenja OAuth. Stripe uredno prijavljen.
-        Kod komunikacije sa Backendom se koristi token
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </p>
     </div>
   );
