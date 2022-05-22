@@ -138,8 +138,8 @@ p {
 }
 
 .partneri {
-  margin-top: 180px;
-  margin-bottom: 0px;
+  margin-top: 160px;
+  margin-bottom: 200px;
 }
 
 .imgPartner {
@@ -170,4 +170,18 @@ p {
 
 .main-predavanja{
   margin-top: 150px;
+}
+
+.main-predavanja > p{
+  margin-bottom: 80px;
+}
+
+.usluge{
+  margin-top: 120px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.usluge .text{
+  margin-bottom: 120px;
 }

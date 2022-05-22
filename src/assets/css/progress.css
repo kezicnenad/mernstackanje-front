@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato";
-  font-size: 16px;
-}
-
-/*** <--- CIRCLE STYLES ---> ***/
 .wrap-circles {
   display: flex;
   flex-wrap: wrap;

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../assets/css/card.css';
 
-function PredavanjeKartica() {
+function PredavanjeKartica({kategorija, naslov}) {
   return (
     <div className="card">
       <div className="card-block">
@@ -14,8 +14,8 @@ function PredavanjeKartica() {
             />
           </div>
           <div className="col">
-            <h5>Frontend</h5>
-            <span>Hello World App</span>
+            <h5>{kategorija}</h5>
+            <span>{naslov}</span>
           </div>
         </div>
         <ul className="task-list">

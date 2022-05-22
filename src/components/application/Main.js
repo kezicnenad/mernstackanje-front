@@ -1,6 +1,7 @@
 import React from 'react';
 import Timeline from "./modules/Timeline";
 import PredavanjeKartice from "./modules/PredavanjaKartice";
+import UslugeLista from './modules/UslugeLista';
 
 import imgMernstack from '../../assets/img/mernstack.png';
 
@@ -20,6 +21,7 @@ function Main() {
       </p>
       <Timeline />
       <PredavanjeKartice />
+      <UslugeLista />
     </div>
   );
 }
