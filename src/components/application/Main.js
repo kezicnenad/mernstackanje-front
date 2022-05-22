@@ -3,7 +3,7 @@ import imgMernstack from '../../assets/img/mernstack.png';
 
 function Main() {
   return (
-    <div>
+    <div className='container'>
       <div className="text-center">
         <img src={imgMernstack} alt="MERN" className="mernLogo" />
       </div>
