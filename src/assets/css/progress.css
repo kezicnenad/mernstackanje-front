@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+}
+
+/*** <--- CIRCLE STYLES ---> ***/
+.wrap-circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: transparent;
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #a99eeb;
+  overflow: hidden;
+}
+
+.circle.per-25 {
+  background-image: conic-gradient(#dc3e76 25%, #a99eeb 0);
+}
+
+.circle.per-50 {
+  background-image: conic-gradient(#dc3e76 50%, #a99eeb 0);
+}
+
+.circle.per-75 {
+  background-image: conic-gradient(#dc3e76 75%, #a99eeb 0);
+}
+
+.circle.per-100 {
+  background-image: conic-gradient(#dc3e76 100%, #a99eeb 0);
+}
+
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  background: #a99eeb;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { isLoggedContext } from '../../App';
-import Login from './login';
-import Logout from './logout';
+import Login from './modules/login';
+import Logout from "./modules/logout";
 
 function Header() {
 

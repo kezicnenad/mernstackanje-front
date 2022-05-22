@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ArtiklKartica from '../application/ArtiklKartica';
+import ArtiklKartica from "../application/modules/ArtiklKartica";
 import StripePayCheckoutButton from "../modules/StripeCheckButton";
 
 function Trgovina() {

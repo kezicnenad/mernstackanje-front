@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
-body{
+
+body {
   font-size: 20px;
   background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
   background-size: auto auto;
@@ -10,51 +11,56 @@ body{
   color: #fff;
 }
 
-h1{
+h1 {
   font-size: 3em;
   padding: 10px 0;
   line-height: 1.5em;
   font-weight: 300;
 }
 
-h2{
-  font-size: 2.2em;
-  padding: 0px 0 80px 0;
+h2 {
+  font-size: 2.4em;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: 700;
+  padding-bottom: 40px;
 }
 
-p{
+.main > p{
+  padding-bottom: 150px;
+}
+
+p {
+  font-size: 1.4em;
   color: #fff !important;
   line-height: 1.8em;
   padding-bottom: 15px;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
   transition: .4s;
 }
 
-a:hover{
+a:hover {
   color: #7e79cc;
   transition: .4s;
 }
 
-.active{
+.active {
   color: #dc3e76;
   font-weight: 400;
 }
 
-.linkButton{
+.linkButton {
   border: none;
 }
 
-.nav-item{
+.nav-item {
   padding: 20px;
 }
 
-.mernLogo{
+.mernLogo {
   height: 700px;
   width: 1200px;
   margin-top: 20px;
@@ -70,7 +76,7 @@ a:hover{
   background-color: #fff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  }
+}
 
 .dropdown-item:hover,
 #signInButton:hover,
@@ -91,17 +97,19 @@ a:hover{
   padding: 0px 100px;
 }
 
-.header{
+.header {
   padding: 30px;
 }
 
-.card h5, p{
+.card h5,
+p {
   color: #000;
 }
 
-.navbar.navbar-expand-lg.navbar-light{
+.navbar.navbar-expand-lg.navbar-light {
   box-shadow: none;
 }
+
 .badge.rounded-pill.account {
   color: #fff;
   height: 35px;
@@ -129,14 +137,15 @@ a:hover{
   transition: .2s;
 }
 
-.partneri{
+.partneri {
   margin-top: 180px;
   margin-bottom: 0px;
 }
 
-.imgPartner{
+.imgPartner {
   margin: auto;
 }
+
 .partnerLogo {
   height: auto;
   width: 120px;
@@ -144,12 +153,21 @@ a:hover{
   opacity: .4;
   transition: .4s;
 }
+
 .partnerLogo:hover {
   filter: blur(0px) grayscale(0);
   opacity: 1;
   transition: .4s;
 }
 
-.footer{
+.footer {
   margin-top: 150px !important;
+}
+
+.list-group{
+  margin-top: 80px;
+}
+
+.main-predavanja{
+  margin-top: 150px;
 }

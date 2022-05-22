@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GoogleLogout } from "react-google-login";
-import { handleIsLoggedContext } from '../../App';
+import { handleIsLoggedContext } from '../../../App';
 
 const clientId = "81687935679-p868qnia2d0ktqt72pvtfgn0f68rhf4m.apps.googleusercontent.com";
 
