@@ -52,8 +52,18 @@ a:hover {
   font-weight: 400;
 }
 
-.linkButton {
+#signInButton, span{
   border: none;
+  color:#dc3e76;
+  font-weight: 400;
+}
+
+#signInButton,
+span:hover {
+  border: none;
+  color:#7e79cc;
+  font-weight: 400;
+
 }
 
 .nav-item {
@@ -70,26 +80,34 @@ a:hover {
 .dropdown-item,
 #signInButton,
 #signOutButton {
-  color: #7e79cc;
-  transition: .4s;
+  color: #dc3e76;
   padding: 15px;
-  background-color: #fff;
+  background-color: transparent;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  transition: .4s;
+}
+#signInButton {
+  color: #fff !important;
+}
+
+#signInButton:hover{
+  background-color: transparent !important;
+  transition: .4s;
 }
 
 .dropdown-item:hover,
 #signInButton:hover,
 #signOutButton:hover {
-  color: #fff;
-  transition: .4s;
+  color: #7e79cc;
+  background-color: #eee;
   cursor: pointer;
-  background-color: #7e79cc;
+  transition: .4s;
 }
 
 #signInButton:active,
 #signOutButton:active {
-  color: #dc3e76;
+  color: #7e79cc;
   transition: .4s;
 }
 

@@ -40,18 +40,18 @@ function Header() {
                   Nenad Kežić
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="linkButton" to="/about-me">
-                  O meni
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="linkButton" to="/examples">
-                  Primjeri
-                </NavLink>
-              </li>
               {isLogged === true && (
                 <>
+                  <li className="nav-item">
+                    <NavLink className="linkButton" to="/about-me">
+                      O meni
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="linkButton" to="/examples">
+                      Primjeri
+                    </NavLink>
+                  </li>
                   <li className="nav-item">
                     <NavLink className="linkButton" to="/school">
                       Mala škola
