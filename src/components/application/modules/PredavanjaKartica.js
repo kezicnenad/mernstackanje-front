@@ -1,17 +1,16 @@
 import React from 'react';
 import '../../../assets/css/card.css';
 
-function PredavanjeKartica({kategorija, naslov}) {
+function PredavanjeKartica({kategorija, naslov, ikona}) {
   return (
     <div className="card">
       <div className="card-block">
         <div className="row align-items-center justify-content-center">
           <div className="col-auto">
-            <img
-              className="img-fluid rounded-circle"
-              src="https://bootdey.com/img/Content/avatar/avatar6.png"
-              alt="dashboard-user"
-            />
+            <div
+              className="img-fluid rounded-circle ikona"
+              style={{ backgroundImage: 'url("' + ikona + '")' }}
+            ></div>
           </div>
           <div className="col">
             <h5>{kategorija}</h5>
@@ -21,24 +20,23 @@ function PredavanjeKartica({kategorija, naslov}) {
         <ul className="task-list">
           <li>
             <i className="task-icon bg-c-green"></i>
-            <h6>
-              Create React App
-            </h6>
+            <h6>Kreiranje React aplikacije</h6>
             <p className="text-muted">npx create-react-app APP_NAME</p>
           </li>
           <li>
             <i className="task-icon bg-c-green"></i>
-            <h6>
-              Anton Knudsen
-            </h6>
-            <p className="text-muted">Lorem ipsum is dolorem…</p>
+            <h6>U terminalu otvorite folder novonastale aplikacije</h6>
+            <p className="text-muted">cd APP_NAME</p>
           </li>
           <li>
             <i className="task-icon bg-c-green"></i>
-            <h6>
-              Anton Knudsen
-            </h6>
-            <p className="text-muted">Lorem ipsum is dolorem…</p>
+            <h6>Instaliranje nužnih paketa</h6>
+            <p className="text-muted">npm install</p>
+          </li>
+          <li>
+            <i className="task-icon bg-c-green"></i>
+            <h6>Pokretanje lokalnog servera</h6>
+            <p className="text-muted">npm start</p>
           </li>
         </ul>
       </div>

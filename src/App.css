@@ -203,3 +203,21 @@ p {
 .usluge .text{
   margin-bottom: 120px;
 }
+
+.card .col-auto > img{
+  background-color: #fff;
+  background-size: 10px;
+}
+
+.ikona{
+  height: 220px;
+  width: 220px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eee;
+}
+
+.fas.fa-shopping-cart{
+  cursor: pointer;
+}

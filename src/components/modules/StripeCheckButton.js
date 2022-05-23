@@ -3,14 +3,8 @@ import { stripeAPI } from "../fetch/stripeAPI";
 
 function StripePayCheckoutButton() {
   return (
-    <div>
-      <button
-        type="button"
-        className="btn btn-danger"
-        onClick={() => stripeAPI()}
-      >
-        Checkout
-      </button>
+    <div className="text-reset me-4">
+      <i className="fas fa-shopping-cart" onClick={() => stripeAPI()}></i>
     </div>
   );
 }

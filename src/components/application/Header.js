@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { isLoggedContext } from '../../App';
 import Login from './modules/login';
 import Logout from "./modules/logout";
+import StripeCheckButton from "../modules/StripeCheckButton";
 
 function Header() {
 
@@ -73,10 +74,7 @@ function Header() {
           {isLogged === true ? (
             <div className="d-flex align-items-center">
               {/* <!-- Icon --> */}
-              <a className="text-reset me-3" href="/">
-                <i className="fas fa-shopping-cart"></i>
-              </a>
-
+                <StripeCheckButton />
               {/* <!-- Notifications --> */}
               <div className="dropdown">
                 <a
